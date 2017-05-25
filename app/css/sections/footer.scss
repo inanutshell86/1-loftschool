@@ -1,0 +1,77 @@
+.page-footer {
+  @extend %clearfix;
+  background: #414141;
+
+  .container {
+      @extend %clearfix;
+
+      @include phones {
+          width: 18.75rem;
+      }
+    }
+}
+
+.page-footer__right, .page-footer__left {
+	width: 50%;
+	float: left;
+}
+
+.page-footer__left {
+    padding-top: rem(18px);
+
+    @include phones {
+      float: none;
+      text-align: center;
+      width: 100%;
+      padding-top: rem(15px);
+    }
+}
+
+.page-footer__right {
+    text-align: right;
+    padding-top: rem(10px);
+
+    @include phones {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+}
+
+.socials {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.socials__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.socials__link {
+  width: rem(32px);
+  height: rem(32px);
+  display: block;
+}
+
+@each $socials in (vk, fb, tw) {
+  .socials__link_#{$socials} {
+    background: url('/img/icons/#{$socials}.png') 0 0 no-repeat;
+
+    &:hover {
+      background: url('/img/icons/#{$socials}-hover.png') 0 0 no-repeat;
+    }
+  }
+}
+
+.copyright {
+    font-size: rem(14px);
+    @include fira(light);
+    color: #9c9c9c;
+}
+
+.socials__item_active {
+    .socials__link {
+      background: url('/img/icons/vk-hover.png') 0 0 no-repeat;
+    }
+}

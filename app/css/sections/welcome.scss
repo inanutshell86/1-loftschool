@@ -1,0 +1,67 @@
+/* --------- welocome --------- */
+
+.wrapper_auth {
+    min-width: rem(320px);
+}
+
+.label {
+    width: rem(300px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fff;
+    border-radius: rem(10px);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+}
+
+.user_vertical {
+    display: inline-block;
+    padding: 0;
+    width: rem(150px);
+    margin-top: rem(-70px);
+
+    @include phones {
+        margin-top: -3.5rem;
+    }
+}
+
+.user__avatar_hello {
+    width: rem(140px);
+    height: rem(140px);
+
+    @include phones {
+        width: 6.75rem;
+        height: 6.75rem;
+    }
+}
+
+.user__username_vertical {
+    font-size: rem(21px);
+    @include openSans();
+    line-height: 1.333;
+    padding: rem(16px) 0 rem(16px) 0;
+}
+
+.label__bottom {
+    background-color: $blue;
+    border-bottom-right-radius: rem(10px);
+    border-bottom-left-radius: rem(10px);
+    padding: rem(19px) 0;
+}
+
+.welcome__btns {
+    text-align: center;
+}
+
+.btn_white {
+    color: $white;
+    border-color:  $white;
+    text-align: center;
+
+    &:hover {
+    background-color: $white;
+    color: $blue;
+    }
+}
