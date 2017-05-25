@@ -3071,7 +3071,7 @@ h1, h2, h3, h4, h5, h6 {
     background: url("img/icons/vk-hover.png") 0 0 no-repeat; }
 
 .socials__link_fb {
-  background: url("img/icons/fb.png") 0 0 no-repeat; }
+  background: url("../img/icons/fb.png") 0 0 no-repeat; }
   .socials__link_fb:hover {
     background: url("img/icons/fb-hover.png") 0 0 no-repeat; }
 
